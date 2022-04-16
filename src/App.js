@@ -5,7 +5,7 @@ import Home from './Components/Home/Home';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App services">
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
       </Routes>
