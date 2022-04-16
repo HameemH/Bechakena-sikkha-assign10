@@ -9,11 +9,11 @@ import Footer from './../Footer/Footer';
 const Home = () => {
     return (
         <div className='home'>
-            <Header></Header>
+            
             <Banner></Banner>
             <Services></Services>
             <Contact></Contact>
-            <Footer></Footer>
+            
         </div>
     );
 };
