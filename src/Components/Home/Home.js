@@ -4,6 +4,7 @@ import Contact from '../Contact/Contact';
 import Header from '../Header/Header';
 import Services from '../Services/Services';
 import './Home.css'
+import Footer from './../Footer/Footer';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <Services></Services>
             <Contact></Contact>
+            <Footer></Footer>
         </div>
     );
 };

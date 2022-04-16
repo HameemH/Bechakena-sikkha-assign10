@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css'
+import { Button } from 'react-bootstrap';
 
 const Contact = () => {
     return (
@@ -12,7 +13,7 @@ const Contact = () => {
              <input type="email" name="" id="" placeholder='Your Email' className='p-2 m-2 rounded-pill' />
                 <h3>Ask your detailed enquiry down</h3>
                 <textarea name="" id="" cols="30" rows="10" className='p-2 m-2 rounded'></textarea>
-                <button className='btn btn-secondary'>Ask</button>
+                <Button className='btn btn-secondary'>Ask</Button>
             </form>
         </div>
        </div>
