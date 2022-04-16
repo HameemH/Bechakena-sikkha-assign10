@@ -1,0 +1,6 @@
+[
+    {"id":1,"name":"service1","price":10,"image":"https://i.ibb.co/tmXfcwW/service1-1.jpg"},
+    {"id":2,"name":"service2","price":10,"image":"https://i.ibb.co/9tcHr0Q/service2-1.jpg"},
+    {"id":3,"name":"service3","price":10,"image":"https://i.ibb.co/KGxVvRG/service3-1.jpg"}
+   
+]
