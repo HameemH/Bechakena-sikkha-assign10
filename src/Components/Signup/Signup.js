@@ -5,6 +5,7 @@ import { useNavigate, Link } from 'react-router-dom';
 
 import auth from './../../firebase.init';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { sendEmailVerification } from 'firebase/auth';
 
 const Signup = () => {
     const [email,setEmail] =  useState('');
@@ -49,6 +50,7 @@ const Signup = () => {
         e.preventDefault();
         console.log(email,password)
         createUserWithEmailAndPassword(email, password);
+        sendEmailVerification();
         console.log(user);
     }
     if (googleUser || user ){
