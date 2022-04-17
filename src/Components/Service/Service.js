@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import './Service.css'
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
    const {id,name,price,image} =props.service
@@ -16,7 +17,7 @@ const Service = (props) => {
       Some quick example text to build on the card title and make up the bulk of
       the card's content.
     </Card.Text>
-    <Button variant="primary">Schedule a Date</Button>
+    <Button as={Link} to='checkout' variant="primary">Schedule a Date</Button>
   </Card.Body>
 </Card>
         </div>

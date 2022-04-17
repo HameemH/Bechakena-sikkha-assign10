@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { Button } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from './../../firebase.init';
@@ -9,6 +9,8 @@ const Login = () => {
     const[email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';
     const [signInWithEmailAndPassword, user, loading, Error] = useSignInWithEmailAndPassword(auth);
     const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
     const navigateToRegister = event => {
@@ -24,10 +26,11 @@ const Login = () => {
         e.preventDefault();
         console.log(email,password)
         signInWithEmailAndPassword(email, password);
+        console.log(Error);
         
     }
     if (googleUser || user ){
-        navigate('/home')
+        navigate(from, {replace: true});
     }
     return (
         <div>
