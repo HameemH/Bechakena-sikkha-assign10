@@ -26,7 +26,7 @@ const Login = () => {
         e.preventDefault();
         console.log(email,password)
         signInWithEmailAndPassword(email, password);
-        console.log(Error);
+        
         
     }
     if (googleUser || user ){
@@ -39,12 +39,14 @@ const Login = () => {
             <h1>Log In</h1>
             <form className='d-flex flex-column' onSubmit={handleLogin}>
              <input onChange={handleEmail} type="email" name="" id="" placeholder='Your Email' className='p-2 m-2 rounded-pill' />
-             <input onChange={handlePassword} type="password" name="" id="" placeholder='Your Password' className='p-2 m-2 rounded-pill' />
+             <input onChange={handlePassword} type="password" name="" id="" placeholder='Your Password(at least 6 characters)' className='p-2 m-2 rounded-pill' />
                 
-             <input type="submit" value="Login"className='btn btn-secondary shadow'/>  
+             <input type="submit" value="Login"className='btn btn-secondary shadow rounded-pill'/>  
             </form>
+            <p className='text-danger'>{Error?.message}</p>
+            <p className='text-danger'>{googleError?.message }</p>
             <p>New here ? <Link to="/signup" className='text-primary pe-auto text-decoration-none' onClick={navigateToRegister}>Please Register</Link> </p>
-            <Button on className='btn btn-light shadow mt-2' onClick={() => signInWithGoogle()}>Login with google</Button>
+            <Button on className='btn btn-light shadow mt-2 rounded-pill' onClick={() => signInWithGoogle()}>Login with google</Button>
 
         </div>
        </div>
