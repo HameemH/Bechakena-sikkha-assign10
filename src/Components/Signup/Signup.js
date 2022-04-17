@@ -40,7 +40,7 @@ const Signup = () => {
             <div>
             <div className='services '>
             <div className=' login-container'>
-            <h1>Sign In</h1>
+            <h1>Sign Up</h1>
             <form onSubmit={handleSignUp} className='d-flex flex-column'>
              <input type="text" name="" id="" placeholder='Your Name' className='p-2 m-2 rounded-pill' />
              <input type="email" name="" id="" placeholder='Your Email' onChange={handleEmail} className='p-2 m-2 rounded-pill' />

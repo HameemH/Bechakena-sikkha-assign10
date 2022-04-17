@@ -4,7 +4,7 @@ import './Service.css'
 import { Link } from 'react-router-dom';
 
 const Service = (props) => {
-   const {id,name,price,image} =props.service
+   const {id,name,price,image, description} =props.service
     return (
        
             <div className='col-md-4 col-sm-12 '>
@@ -12,10 +12,9 @@ const Service = (props) => {
   <Card.Img variant="top" src={image} />
   <Card.Body>
     <Card.Title>{name}</Card.Title>
-    <Card.Title>{price}/Hr</Card.Title>
+    <Card.Title>Price:{price}/Hr</Card.Title>
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+     {description}
     </Card.Text>
     <Button as={Link} to='checkout' variant="primary">Schedule a Date</Button>
   </Card.Body>

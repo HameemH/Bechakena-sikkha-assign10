@@ -1,6 +1,6 @@
 [
-    {"id":1,"name":"service1","price":10,"image":"https://i.ibb.co/tmXfcwW/service1-1.jpg"},
-    {"id":2,"name":"service2","price":10,"image":"https://i.ibb.co/9tcHr0Q/service2-1.jpg"},
-    {"id":3,"name":"service3","price":10,"image":"https://i.ibb.co/KGxVvRG/service3-1.jpg"}
+    {"id":1,"name":"Sales Training for new Employees","description":"A comprehensive training for thoese who joined new to a sales team of a company","price":10,"image":"https://i.ibb.co/tmXfcwW/service1-1.jpg"},
+    {"id":2,"name":"Annual Sales Analysis","description":"Analysis your sales data is vey important for growth of  a company.I have 5 years of experience of doing this job.","price":10,"image":"https://i.ibb.co/9tcHr0Q/service2-1.jpg"},
+    {"id":3,"name":"Basic Sales Taraining for Non-sales Employees","description":"For a service based company if every employee have a basic knowledge of how sales work it helps the company in the long run","price":10,"image":"https://i.ibb.co/KGxVvRG/service3-1.jpg"}
    
 ]

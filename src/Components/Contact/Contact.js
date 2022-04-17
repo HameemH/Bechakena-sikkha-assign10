@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-       <div className='services '>
+       <div className='services p-2 mt-2'>
             <div className=' login-container'>
             <h1>Contact Me to know More</h1>
             <form className='d-flex flex-column'>
