@@ -1,6 +1,6 @@
 # BechaKena-Sikkha
 
-[LIVE SITE](https://assignment-x-68d60.web.app/).
+[LIVE SITE](https://assignment-x-68d60.web.app/home).
 * This website is service based website of a Sales-consultant.
 * It has 8 routes
 * One route for checkout is protected route
