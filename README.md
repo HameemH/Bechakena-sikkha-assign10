@@ -1,6 +1,12 @@
 # BechaKena-Sikkha
 
 [LIVE SITE](https://assignment-x-68d60.web.app/).
+* This website is service based website of a Sales-consultant.
+* It has 8 routes
+* One route for checkout is protected route
+* It has email pass word login system and google login system
+* Authentication is done by firebase
+* technology used here - react,bootstrap,firebase
 
 ## Available Scripts
 
