@@ -9,6 +9,7 @@ import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-fi
 const Signup = () => {
     const [email,setEmail] =  useState('');
     const [password,setPassword] =  useState('');
+    const navigate = useNavigate()
     const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
     const [
         createUserWithEmailAndPassword,
@@ -16,9 +17,6 @@ const Signup = () => {
         loading,
         error,
       ] = useCreateUserWithEmailAndPassword(auth);
-      console.log(user);
-    const navigate = useNavigate() ;
-    
     const handleEmail = e =>{
         setEmail(e.target.value);
     }
@@ -30,6 +28,8 @@ const Signup = () => {
         console.log(email,password)
         createUserWithEmailAndPassword(email, password);
         console.log(user);
+    }
+    if (googleUser || user ){
         navigate('/home')
     }
     const navigateToLogin = () => {
@@ -45,7 +45,7 @@ const Signup = () => {
              <input type="text" name="" id="" placeholder='Your Name' className='p-2 m-2 rounded-pill' />
              <input type="email" name="" id="" placeholder='Your Email' onChange={handleEmail} className='p-2 m-2 rounded-pill' />
              <input type="password" name="" id="" placeholder='Your Password'  onChange={handlePassword} className='p-2 m-2 rounded-pill' />
-                
+
               <input type="submit" value="Signup" className='btn btn-secondary shadow'/>  
                 
             </form>

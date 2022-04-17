@@ -9,7 +9,7 @@ const Login = () => {
     const[email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-    const [signInWithEmailAndPassword, user, loading, hookError] = useSignInWithEmailAndPassword(auth);
+    const [signInWithEmailAndPassword, user, loading, Error] = useSignInWithEmailAndPassword(auth);
     const [signInWithGoogle, googleUser, loading2, googleError] = useSignInWithGoogle(auth);
     const navigateToRegister = event => {
         navigate('/signup');
@@ -24,9 +24,9 @@ const Login = () => {
         e.preventDefault();
         console.log(email,password)
         signInWithEmailAndPassword(email, password);
-        navigate('/home')
+        
     }
-    if (googleUser ){
+    if (googleUser || user ){
         navigate('/home')
     }
     return (
