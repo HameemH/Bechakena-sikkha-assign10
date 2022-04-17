@@ -14,6 +14,7 @@ const Login = () => {
              <input type="password" name="" id="" placeholder='Your Password' className='p-2 m-2 rounded-pill' />
                 
                 <Button className='btn btn-secondary'>Login</Button>
+                <Button className='btn btn-light shadow mt-2'>Login with google</Button>
             </form>
         </div>
        </div>
