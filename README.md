@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# BechaKena-Sikkha
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[LIVE SITE](https://assignment-x-68d60.web.app/).
 
 ## Available Scripts
 
