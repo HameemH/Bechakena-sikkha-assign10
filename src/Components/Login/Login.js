@@ -62,7 +62,7 @@ const Login = () => {
             <p className='text-danger'>{Error?.message}</p>
             <p className='text-danger'>{googleError?.message }</p>
             <p>New here ? <Link to="/signup" className='text-primary pe-auto text-decoration-none' onClick={navigateToRegister}>Please Register</Link> </p>
-            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+            <p>Forget Password? <Link to="" className=' text-primary  text-decoration-none' onClick={resetPassword}>Reset Password</Link> </p>
             <Button on className='btn btn-light shadow mt-2 rounded-pill' onClick={() => signInWithGoogle()}>Login with google</Button>
             <ToastContainer></ToastContainer>
         </div>
