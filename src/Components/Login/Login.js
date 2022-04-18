@@ -54,8 +54,8 @@ const Login = () => {
             <div className=' login-container'>
             <h1>Log In</h1>
             <form className='d-flex flex-column' onSubmit={handleLogin}>
-             <input onChange={handleEmail} type="email" name="" id="" placeholder='Your Email' className='p-2 m-2 rounded-pill' />
-             <input onChange={handlePassword} type="password" name="" id="" placeholder='Your Password(at least 6 characters)' className='p-2 m-2 rounded-pill' />
+             <input onChange={handleEmail} type="email" name="" id="" placeholder='Your Email' className='p-2 m-2 rounded-pill' required />
+             <input onChange={handlePassword} type="password" name="" id="" placeholder='Your Password(at least 6 characters)' className='p-2 m-2 rounded-pill' required/>
                 
              <input type="submit" value="Login"className='btn btn-secondary shadow rounded-pill'/>  
             </form>
